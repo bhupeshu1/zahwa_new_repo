@@ -1,0 +1,34 @@
+.Homepage-heading{
+  display:flex;
+  justify-content: space-between;
+}
+.image{
+  height:200px;
+  width:200px;
+}
+.circle-div{
+  display:flex;
+  align-items:center;
+  gap:100px;
+}
+.circle-right-box{
+  height:150px;
+  width:200px;
+  border:1px solid gray;
+  border-radius:10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.circle-content{
+  text-align: center;
+  padding:14px 18px;
+  position:absolute;
+  top:120px;
+  left:85px;
+}
+.order{
+  display:flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,50 @@
+
+:root{
+  --background-color:#13322B;
+  --light-color:white;
+  --dark-color:gray;
+
+}
+.card-container{
+  width: 350px;
+  height: 516px;
+  border:1px solid gray;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+}
+.top-circle{
+  display:flex;
+  flex-direction:column;
+  position: absolute;
+  top:100px;
+  }
+  .number{
+    color:var(--light-color);
+    text-align: center;
+  }
+  .text{
+    color:var(--dark-color);
+    word-spacing: 5px;
+    font-size:25px;
+  }
+  #circleimg{
+    position:absolute;
+    top:20px;
+    left:50px;
+  }
+  .item{
+    display:flex;
+    position: absolute;
+    top:350px;
+    gap:90px;
+  }
+  #bottompara{
+    color:white;
+    position:absolute;
+    top:450px;
+    cursor:pointer;
+    word-spacing:5px;
+    font-size:20px;
+  }
