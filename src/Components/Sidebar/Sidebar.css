@@ -3,8 +3,9 @@ ul {
   margin: 0;
   padding: 0;
   width: 60px;
-} 
-li Link {
+}
+
+li,Nav {
   display: block;
   background-color: #dddddd;
   text-decoration: none;

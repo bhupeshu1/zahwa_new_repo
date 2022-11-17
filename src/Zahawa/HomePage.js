@@ -1,22 +1,22 @@
 import React from 'react'
 import './Homepage.css'
-import image from './image/icon.png'
-import image1 from './image/Group 9.svg'
-import image2 from './image/Oval.png'
 
+import image1 from './image/orangecircle.svg'
+import image2 from './image/greencircle.png'
+import image3 from './image/notification.png'
 const HomePage = () => {
   return (
     <div>
       <div class="home-heading">
         <h1>Home</h1>
-        <img src={image} id="notificatin-img" />
+        <img src={image3} />
       </div>
       {/*top Home and icon close*/}
       <div class="active-box">
         <img src={image1} />
         <div class="circle-content">
           <h1>287</h1>
-          <h5>Total orders</h5>
+          <h5 id="total-order">Total orders</h5>
           <p>This week</p>
         </div>
         <div class="box">
@@ -43,7 +43,7 @@ const HomePage = () => {
         <div class="button-text">
           <div class="text">
             <h1>Currently active orders</h1>
-            <h1>See all orders</h1>
+            <h1 id="see">See all orders</h1>
           </div>
           <div class="btn-div">
             {/*<Button textStyle={"submitButtonText"} buttonStyle={"btn"} buttonText={"Order placed"} />*/}
@@ -59,9 +59,12 @@ const HomePage = () => {
             <p>Wedding & anniversary</p>
           </div>
           <div>
+            <div>
             <h3>$240.00.4 items</h3>
             <p>Ordered on Jan 2nd, 2021</p>
+            </div>
           </div>
+          
 
         </div>
         <div class="order-list">
@@ -97,6 +100,25 @@ const HomePage = () => {
           </div>
 
         </div>
+      </div>
+      {/*card components start*/}
+      <div class="card-components">
+        <img src={image3} id="combined-shape" />
+        <div class="card-component-content">
+          <h1>168</h1>
+          <p>Total orders</p>
+        </div>
+        <div class="card-sale">
+          <div>
+            <p>Item for sale</p>
+            <h1>168</h1>
+          </div>
+          <div>
+            <p>Item sold</p>
+            <h1>20</h1>
+          </div>
+        </div>
+        <p id="text">See inventory</p>
       </div>
     </div>
   )
