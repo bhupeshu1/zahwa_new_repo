@@ -5,8 +5,8 @@ import {
   BrowserRouter
 } from "react-router-dom";
 import HomePage from './Zahawa/HomePage'
-import Sidebar from './Components/Sidebar/Sidebar'
 import Myorders from './Zahawa/Myorders'
+import Sidebar from "./Components/Sidebar/Sidebar"
 import Mystore from './Zahawa/Mystore'
 import Promotion from'./Zahawa/Promotion'
 import Proposal from './Zahawa/Proposal'

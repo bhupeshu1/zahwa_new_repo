@@ -1,24 +1,26 @@
 import React from "react";
-import './Sidebar.css';
-import { NavLink } from "react-router-dom";
+import './bar.css';
+import { NavLink, Link } from "react-router-dom";
 const Sidebar = () => {
-  (
+ return (
     <div>
+      sachinpadhalni
+      
       <ul>
         <li>
-          <NavLink to="/">Homepage</NavLink>
+        <NavLink to={"/"}>Home</NavLink>
         </li>
         <li>
-          <NavLink to="/Mystore">My store</NavLink>
+          <Link to="/Mystore">My store</Link>
         </li>
         <li>
-          <NavLink to="/Myorders">My orders</NavLink>
+          <Link to="/Myorders">My orders</Link>
         </li>
         <li>
-          <NavLink to="/Proposal">Proposal</NavLink>
+          <Link to="/Proposal">Proposal</Link>
         </li>
         <li>
-          <NavLink to="/Promotion">Promotion</NavLink> 
+          <Link to="/Promotion">Promotion</Link> 
         </li>
       </ul>
     </div>
