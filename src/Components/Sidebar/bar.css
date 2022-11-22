@@ -2,11 +2,27 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 60px;
 }
 
-li,Nav {
+li a {
   display: block;
-  background-color: #dddddd;
+  color: #000;
+  padding: 8px 23px;
   text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+#design-img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.sidebar {
+  width: 20%;
+  border-right: 1px solid #EAECF3;
 }

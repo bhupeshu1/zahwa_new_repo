@@ -1,0 +1,11 @@
+.my-store-container {
+}
+
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.vendor-details{
+  
+}

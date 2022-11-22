@@ -1,0 +1,10 @@
+.heading{
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Nunito Sans';
+ font-style: normal;
+ font-weight: 800;
+ line-height: 30px;
+ letter-spacing: 0.375px;
+ color: #1F1F21;
+}

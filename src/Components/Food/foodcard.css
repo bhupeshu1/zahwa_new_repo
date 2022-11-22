@@ -1,0 +1,17 @@
+.food-card {
+  min-height: 223px;
+  text-align: start;
+  width: 300px;
+}
+
+.food-image {
+  border-radius: 10px;
+  mix-blend-mode: normal;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.food-image:hover {
+  opacity: 0.5;
+}
