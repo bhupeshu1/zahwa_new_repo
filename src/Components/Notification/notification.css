@@ -1,0 +1,22 @@
+.recieved-order {
+  Width: 444px;
+  height: 107px;
+  border-Radius: 13px;
+  border: 1px solid #EAECF3;
+  padding: 20px 30px;
+  background-color:lightgray;
+  /* position: absolute;
+ right: 0;
+ top: 0;
+ background-color: white; */
+}
+
+.notification {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

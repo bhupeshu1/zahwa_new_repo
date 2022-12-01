@@ -88,14 +88,15 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 10px;
   border: 1px solid #EAECF3;
   border-radius: 26px;
-  padding: 14px;
+  padding: 8px;
 
 }
-.order-list{
+
+.order-list {
   Width: 664px;
   min-height: 83px;
   display: flex;
@@ -103,42 +104,15 @@
   /* gap:100px; */
   flex-direction: row;
   background-color: #F7F8FB;
-  padding: 20px 20px;
+  padding: 5px;
   border-radius: 13px;
 }
-/*
-.order-btn{
-  display: flex;
-  gap:100px;
-}
-
-.order-details {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 22px;
-  letter-spacing: 0.275px;
-  color:var(--dark-color);
-
-}
-
-.order-list{
-  Width: 664px;
-  min-height: 83px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  background-color: #F7F8FB;
-  padding: 20px 20px;
-  border-radius: 13px;
-
-}*/
 
 .card-menu {
   border-radius: 26px;
   background-color: #13322B;
   width: 335px;
+  height: 600px;
 }
 
 .oval-img {
@@ -190,29 +164,51 @@
   flex-direction: column;
   gap: 25px;
   padding: 26px;
-
 }
 
 .item {
-  padding: 20px 33px;
+  padding: 5px 10px;
 }
 
-.order-list{
+.order-placed {
   display: flex;
-  gap: 100px;
-  background-color: #F7F8FB;
-  margin: 0px;
-  border-radius: 10px;
-  padding: 15px 8px;
+  justify-content: space-between;
+  Width: 664px;
+  /* min-height: 83px; */
+  padding: 10px;
+}
 
+.order-details {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.275px;
+  color: #000000;
+}
 
+.btn-serise {
+  display: flex;
+  gap: 25px;
+}
+
+.btn-text {
+  background: none;
+  border: none;
+  color: gray;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .order-list,
 p {
   font-family: 'Nunito Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   color: #59595B;
 }
 
@@ -293,9 +289,14 @@ p {
   .price-list {
     border: none;
   }
-  .total-order{
+
+  .order-placed {
+    width: 300px;
+  }
+
+  .total-order {
     display: flex;
-    gap:100px;
+    gap: 100px;
   }
 
   .order-box {
@@ -305,6 +306,9 @@ p {
     border: none;
 
   }
+  .btn-serise {
+    gap:5px;
+  }
 
   .bell-icon {
     width: 90px;
@@ -312,10 +316,12 @@ p {
   }
 
   .order-list {
-    max-width: 300px;
+    /* max-width: 500px; */
+    width: 330px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 400px;
+    /* align-items: center; */
   }
 
   .box {
@@ -336,12 +342,13 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 50%;
     color: var(--)
   }
 
   .active-box {
     border: none;
-    width: 300px;
+    width: 375px;
   }
 
   .card-components {

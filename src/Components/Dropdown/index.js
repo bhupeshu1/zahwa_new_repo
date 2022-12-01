@@ -1,10 +1,16 @@
-import React from 'react';
-import './dropdownmenu.css';
-
+import React from 'react'
+import './dropdownmenu.css'
 const index = () => {
   return (
-    <div>
- </div>
+    <div class="dropdown">
+      <button class="dropbtn">This week</button>
+      <div class="dropdown-content">
+        <a href="#">Today</a>
+        <a href="#">This week</a>
+        <a href="#">This month</a>
+        <a href="#">This year</a>
+      </div>
+    </div>
   )
 }
 

@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Homepage.css'
 import image1 from './../image/orangecircle.svg'
 import image3 from "./../image/notification.png"
-// import Selectbox from '../../Components/SelectBox/Selectbox'
+import Selectbox from '../../Components/SelectBox/index'
+import Notification from '../../Components/Notification/index'
 const HomePage = () => {
+
+  const [notification, setNotification] = useState(false);
   return (
     <div className="homepage">
       <div className="home-heading">
         <h1>Home</h1>
-        <img src={image3} alt={"s"} class="bell-icon" />
+        <img onClick={() => setNotification(true)} src={image3} alt={"s"} class="bell-icon" />
+        <Notification notification={notification} onClose={() => setNotification(false)} />
         {/* <i class="bi bi-bell-fill"></i> */}
 
       </div>
@@ -19,7 +23,9 @@ const HomePage = () => {
           <div className="circle-content">
             <h2>287</h2>
             <p>Total order</p>
-            <p>This week</p>
+            <Selectbox />
+
+
           </div>
         </div>
         <div className="active-box">
@@ -40,14 +46,18 @@ const HomePage = () => {
       </div>
       <div className="order-box-container">
         <div className="price-list">
-          {/*
-        <div class="order-btn">
-        <div class="total-order">
-          <h1 class="order-details">Currently active orders</h1>
-          <h1 class="order-details">See all orders</h1>
-          </div>
-          <div class="btn-serise"></div>
-  </div>*/}
+
+          <div class="order-placed">
+            <span class="order-details">Currently active orders</span>
+            <span class="order-details">See all orders</span>
+            </div>
+            <div class="btn-serise">
+              <button class="btn">Order placed</button>
+              <button class="btn-text">Confirmed</button>
+              <button class="btn-text">On process</button>
+              <button class="btn-text">Completed</button>
+            </div>
+          
           {[1, 2, 3, 4].map((item, id) => (
 
             <div className="order-list" key={`first+${id}`}>

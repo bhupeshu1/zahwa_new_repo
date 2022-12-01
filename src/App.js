@@ -18,6 +18,7 @@ function App() {
         <Sidebar />
         <div className='route-container'>
           <Routes>
+
             <Route path='/' element={<HomePage />} />
             <Route path='/MyStore' element={<Mystore />} />
             <Route path='/Myorder' element={<Myorder />} />
