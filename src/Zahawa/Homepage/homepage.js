@@ -1,15 +1,26 @@
 import React, { useState } from 'react'
 import './Homepage.css'
-import image1 from './../image/orangecircle.svg'
+import image1 from "./../image/orangecircle.svg"
 import image3 from "./../image/notification.png"
-import Selectbox from '../../Components/SelectBox/index'
+import Selectbox from "../../Components/SelectBox/index"
 import Notification from '../../Components/Notification/index'
+import Hamburger from './../image/Hamburger.png'
+import HamburgerMenu from '../../Components/HamburgerMenu/hamburgermenu'
+import Sidebar from '../../Components/Sidebar'
 const HomePage = () => {
+  const [hamburger, setHamburger] = useState(false)
 
   const [notification, setNotification] = useState(false);
   return (
     <div className="homepage">
       <div className="home-heading">
+        <div className='hamburger-Menu' >
+          {/* <Sidebar/> */}
+
+          <img onClick={() => setHamburger(true)} src={Hamburger} alt="" height="40px" width="40px" />
+          <HamburgerMenu hamburger={hamburger} />
+        </div>
+
         <h1>Home</h1>
         <img onClick={() => setNotification(true)} src={image3} alt={"s"} class="bell-icon" />
         <Notification notification={notification} onClose={() => setNotification(false)} />
@@ -50,14 +61,14 @@ const HomePage = () => {
           <div class="order-placed">
             <span class="order-details">Currently active orders</span>
             <span class="order-details">See all orders</span>
-            </div>
-            <div class="btn-serise">
-              <button class="btn">Order placed</button>
-              <button class="btn-text">Confirmed</button>
-              <button class="btn-text">On process</button>
-              <button class="btn-text">Completed</button>
-            </div>
-          
+          </div>
+          <div class="btn-serise">
+            <button class="btn">Order placed</button>
+            <button class="btn-text">Confirmed</button>
+            <button class="btn-text">On process</button>
+            <button class="btn-text">Completed</button>
+          </div>
+
           {[1, 2, 3, 4].map((item, id) => (
 
             <div className="order-list" key={`first+${id}`}>
@@ -73,7 +84,6 @@ const HomePage = () => {
               </div>
             </div>
           ))}
-
         </div>
         <div className="card-menu">
           <div className="oval-img">

@@ -3,6 +3,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+Nav:active {
+  color: blue;
+}
 
 li a {
   display: block;

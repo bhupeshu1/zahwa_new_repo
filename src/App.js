@@ -10,20 +10,22 @@ import Sidebar from "./Components/Sidebar"
 import Mystore from './Zahawa/MyStore/Mystore'
 import Promotion from './Zahawa/Promotion/index'
 import Proposal from './Zahawa/Proposal/index'
+import HamburgerMenu from './Components/HamburgerMenu/hamburgermenu';
 
 function App() {
   return (
     <BrowserRouter>
       <div className='app-container'>
         <Sidebar />
+        <HamburgerMenu/>
         <div className='route-container'>
           <Routes>
 
             <Route path='/' element={<HomePage />} />
             <Route path='/MyStore' element={<Mystore />} />
             <Route path='/Myorder' element={<Myorder />} />
-            {/* <Route path='/Promotion' element={<Promotion />} /> */}
-            {/* <Route path='/Proposal' element={<Proposal />} /> */}
+            <Route path='/Promotion' element={<Promotion />} />
+            <Route path='/Proposal' element={<Proposal />} />
           </Routes>
         </div>
       </div>

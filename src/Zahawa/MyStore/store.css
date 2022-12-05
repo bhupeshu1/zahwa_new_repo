@@ -64,4 +64,10 @@
   span{
     color:gray;
   }
+  .all-category{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding:25px 23px;
+  }
   

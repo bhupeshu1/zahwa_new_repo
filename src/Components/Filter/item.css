@@ -1,0 +1,8 @@
+.service-product-btn{
+  display:flex;
+  gap:10px;
+}
+.text-btn{
+  color:gray;
+  border:1px solid #EAECF3;
+}

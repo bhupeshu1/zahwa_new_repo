@@ -4,6 +4,7 @@ import image from '../image/foodimage.png'
 import notification from '../image/notification.png'
 import starimg from '../image/star.png'
 import marriage from '../image/couple-image.svg'
+import Selectbox from '../../Components/SelectBox';
 import './store.css'
 <i class="bi bi-icon_name"></i>
 
@@ -53,6 +54,11 @@ const Myorder = () => {
             <span>Stock sold</span>
           </div>
         </div>
+      </div>
+      <div class="all-category"><div>
+        <Selectbox/>
+      </div>
+
       </div>
       <div className='product-list-container'>
         {

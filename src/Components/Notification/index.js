@@ -1,6 +1,6 @@
 import React from 'react'
 import './notification.css'
-import rightaero from './../image/Path.png'
+import rightaero from './../Image/Path.png'
 const index = ({ notification, onClose }) => {
   if (!notification) {
     return null;
@@ -38,11 +38,6 @@ const index = ({ notification, onClose }) => {
         <p>Please confirm order “XTHR-1928880” for your customer</p>
         <p>Feb 4th, 2021 - 07:22</p>
       </div>
-
-
-
-
-
     </div>
   )
 }
