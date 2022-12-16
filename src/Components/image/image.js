@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import CoupleImg from '../Image/couple-image.svg'
 import design from '../Image/design.png'
 import foodimage from '../Image/foodimage.png'
@@ -15,6 +15,20 @@ import promotion from '../Image/promotion.png'
 import proposal from '../Image/proposals.png'
 import Rectangle from '../Image/Rectangle.png'
 import star from '../Image/star.png'
+import ThreeDot from '../Image/threedot.png'
+import symbol from '../Image/upaero.png'
+import photo from '../Image/man.png'
+import YellowStar from '../Image/yellowStar.png'
+import Graph from '../Image/graph.png'
+import YoungMan from '../Image/young.png'
+import Femalepic from '../Image/female.png'
+import smilepic from '../Image/smile.png'
+import blurHome from '../Image/blurhome.png'
+import blurMystore from '../Image/blurmystore.png'
+import blurMyorder from '../Image/blurmyorder.png'
+import blurProposal from '../Image/blurproposal.png'
+import blurPromotion from '../Image/blurpromotion.png'
+import digit8 from '../Image/Group8.png'
 const image = {
   CoupleImg,
   design,
@@ -32,5 +46,20 @@ const image = {
   proposal,
   Rectangle,
   star,
+  ThreeDot,
+  symbol,
+  photo,
+  YellowStar,
+  Graph,
+  YoungMan,
+  Femalepic,
+  smilepic,
+  blurHome,
+  blurMystore,
+  blurMyorder,
+  blurProposal,
+  blurPromotion,
+  digit8,
+
 }
 export default image; 

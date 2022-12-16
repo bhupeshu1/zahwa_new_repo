@@ -1,18 +1,14 @@
 import React from 'react'
-import Text from '../Text'
 import './button.css'
 
 const Button = (props) => {
-  const { onClick, buttonText, buttonClass = '', textSize } = props;
+  const { onClick, buttonText, buttonClass=''} =props;
   return (
     <div>
       <button className={`btn ${buttonClass}`} onClick={onClick}>
-        <Text size={textSize} text={buttonText} />
+        {buttonText}
       </button>
-      <Button className={'btn-success ${buttonClass}'} onClick={onClick}>
-      <Text size={textSize} text={buttonText} />
-      </Button>
-    </div>
+    </div> 
   )
 }
 

@@ -1,63 +1,85 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Filter from '../../Components/Filter'
 import ProductCard from '../../Components/Food';
-import image from '../image/foodimage.png'
-import notification from '../image/notification.png'
-import starimg from '../image/star.png'
-import marriage from '../image/couple-image.svg'
+import image from '../image/foodimage.png';
+import notification from '../image/notification.png';
+import starimg from '../image/star.png';
+import marriage from '../image/couple-image.svg';
+import threedots from '../image/threedot.png'
 import Selectbox from '../../Components/SelectBox';
-import './store.css'
-<i class="bi bi-icon_name"></i>
-
-const ProductList = [
-  { name: "Item name lorem ipsum dolor", price: 30, currency: '$', image: image },
-  { name: "Item name lorem ipsum dolor", price: 40, currency: '$', image: image },
-  { name: "Item name lorem ipsum dolor", price: 35, currency: '$', image: image },
-  { name: "Item name lorem ipsum dolor", price: 45, currency: '$', image: image },
-  { name: "Item name lorem ipsum dolor", price: 30, currency: '$', image: image },
-  { name: "Item name lorem ipsum dolor", price: 40, currency: '$', image: image },
-  // { name: "Item name lorem ipsum dolor", price: 60, currency: '$', image: image }
-];
-
+import Sort from '../../Components/Sort';
+import Information from '../../Components/Information'
+import Customer from '../../Components/Customer'
+import './store.css';
 const Myorder = () => {
+  const [filter, setFilter] = useState(false)
+  const [sort, setSort] = useState(false)
+  const [information, setInformation] = useState(false)
+  const [customer,setCustomer] = useState(false)
+  const ProductList = [
+    { name: "Item name lorem ipsum dolor", price: 30, currency: '$', image: image },
+    { name: "Item name lorem ipsum dolor", price: 40, currency: '$', image: image },
+    { name: "Item name lorem ipsum dolor", price: 35, currency: '$', image: image },
+    { name: "Item name lorem ipsum dolor", price: 45, currency: '$', image: image },
+    { name: "Item name lorem ipsum dolor", price: 30, currency: '$', image: image },
+    { name: "Item name lorem ipsum dolor", price: 40, currency: '$', image: image },
+    // { name: "Item name lorem ipsum dolor", price: 60, currency: '$', image: image }
+  ];
+
+
   return (
+
     <div className="my-store-container">
       <div className="home-heading">
         <h1>Home</h1>
-        <img src={notification} alt={"hello"} class="Notification-img" />
+        <img onClick={() => setInformation(true)} src={notification} alt={"hello"} className="Notification-img" />
+        <Information information={information} onClose={() => setInformation(false)} />
       </div>
       <div className="vendor-div">
         <div className="couple-image"><img src={marriage} alt={"hello"} />
         </div>
         <div className="vendor-details">
           <h1>Vendor name lorem ipsum</h1>
-          <p><img src={starimg} />4.2 | Bangelore | Food, drinks & caterings</p>
-          <div>
-
-            <button type="information-btn" class="btn">Informations</button>
-            <button type="customer rating" class="text-btn">Customer ratings</button>
+          <p><img src={starimg} alt="asterisk" />4.2 | Bangelore | Food, drinks & caterings</p>
+          <div className="button-div">
+             <button type="information-btn" className="btn">Informations</button>
+            <button type="customer rating" className="text-btn" onClick={() => setCustomer(true)}>Customer ratings</button>
+            <Customer  customer={customer} onCloseModal={() => setCustomer(false)}/>
           </div>
         </div>
         <div className="whole-item">
-          <div class="item-no">
+          <div className="item-no">
             <h4>44</h4>
             <span>No. of items</span>
           </div>
-          <div class="item-no"><h4>279</h4>
+          <div className="item-no"><h4>279</h4>
             <span>Total stocks</span>
           </div>
-          <div class="item-no">
+          <div className="item-no">
             <h4>161</h4>
             <span>Stock available</span>
           </div>
-          <div class="item-no">
+          <div className="item-no">
             <h4>118</h4>
             <span>Stock sold</span>
           </div>
         </div>
       </div>
-      <div class="all-category"><div>
-        <Selectbox/>
-      </div>
+      <div class="all-category">
+        <Selectbox EventName1={'All category'} EventName2={'Category 1'} EventName3={'Category 2'} EventName4={'Category 3'} EventName5={'Category 4'} EventName6={'Category 5'} EventName7={'Category 6'} EventName8={'Category 7'} EventName9={'Category 8'} />
+        <div><img src={threedots} alt="dots" /></div>
+        <div>
+          <input type="search" placeholder='Search'></input>
+        </div>
+        <div>
+          <button onClick={() => setFilter(true)} className="filter-btn">Filter</button></div>
+        <Filter filter={filter} onclose={() => setFilter(false)} />
+        <div>
+          <button onClick={() => setSort(true)} className="sort-btn">Sort</button>
+          </div>
+        
+        <Sort sort={sort} onclose={() => setSort(false)} />
+        
 
       </div>
       <div className='product-list-container'>

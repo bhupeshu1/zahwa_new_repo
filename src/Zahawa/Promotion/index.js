@@ -1,13 +1,15 @@
 import React from 'react'
 import './promotion.css'
-
-const index = () => {
+const Index = () => {
   return (
-    <div>
-      <h1>Hello javaScript!</h1>
-      
+<div className='container'>
     </div>
+      
+
+    
+
+
   )
 }
 
-export default index
+export default Index

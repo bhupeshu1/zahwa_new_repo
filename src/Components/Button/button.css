@@ -7,6 +7,7 @@
   color: var(--style-color);
   cursor: pointer;
   padding: 12px;
+  color:white;
   background-color: #13322B;
 }
 
@@ -22,18 +23,14 @@
 .btn:hover {
   opacity: 0.7;
 }
-.btn{
-  border: none;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-block;
-}
+
 .btn-success:hover {background: #eee;
   color:darkgray;
 }
-.order-list{
+/* .order-list{
   display:flex;
   flex-direction: column;
+} */
+.textcolor{
+  color:red;
 }

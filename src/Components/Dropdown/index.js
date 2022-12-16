@@ -2,9 +2,9 @@ import React from 'react'
 import './dropdownmenu.css'
 const index = () => {
   return (
-    <div class="dropdown">
-      <button class="dropbtn">This week</button>
-      <div class="dropdown-content">
+    <div className="dropdown">
+      <button className="dropbtn">This week</button>
+      <div className="dropdown-content">
         <a href="#">Today</a>
         <a href="#">This week</a>
         <a href="#">This month</a>

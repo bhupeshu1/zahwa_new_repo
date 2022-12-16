@@ -1,0 +1,109 @@
+{
+  "order placed": [
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    }
+  ],
+  "confirmed": [
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    }
+  ],
+  "On process": [
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    }
+  ],
+  "Completed": [
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+
+    },
+    {
+      "name": "Elise Beverley",
+      "title": "Wedding & anniversary",
+      "price": "$240.00  4 items",
+      "orderdate": "Ordered on Jan 2nd, 2021"
+
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import {
   BrowserRouter
 } from "react-router-dom";
 import HomePage from './Zahawa/Homepage/homepage'
-import Myorder from './Zahawa/MyOrder/index'
+import MyOrder from './Zahawa/MyOrder/index'
 import Sidebar from "./Components/Sidebar"
 import Mystore from './Zahawa/MyStore/Mystore'
 import Promotion from './Zahawa/Promotion/index'
@@ -14,23 +14,33 @@ import HamburgerMenu from './Components/HamburgerMenu/hamburgermenu';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className='app-container'>
-        <Sidebar />
-        <HamburgerMenu/>
-        <div className='route-container'>
-          <Routes>
+    <div className='app-container'>
+    {/* // <div className='route-container'> */}
 
-            <Route path='/' element={<HomePage />} />
-            <Route path='/MyStore' element={<Mystore />} />
-            <Route path='/Myorder' element={<Myorder />} />
-            <Route path='/Promotion' element={<Promotion />} />
-            <Route path='/Proposal' element={<Proposal />} />
-          </Routes>
+      <BrowserRouter>
+      <div className='route-container'>
+      <Sidebar />
+
+        <Routes>
+
+          <Route path='/' element={<HomePage />} />
+          <Route path='/MyStore' element={<Mystore />} />
+          <Route path='/MyOrder' element={<MyOrder />} />
+          <Route path='/Promotion' element={<Promotion />} />
+          <Route path='/Proposal' element={<Proposal />} />
+
+        </Routes>
+        {/* <div className='route-container'> */}
+        <HamburgerMenu />
+        {/* <Sidebar /> */}
+        {/* </BrowserRouter> */}
+        
         </div>
-      </div>
-    </BrowserRouter>
 
+
+
+      </BrowserRouter>
+    </div>
   );
 
 }

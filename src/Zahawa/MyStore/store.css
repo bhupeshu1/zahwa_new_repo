@@ -1,12 +1,21 @@
-.product-list-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.my-store-container{
+  width:80%;
+   margin-left:20px;
+  position:absolute;
+  right:0;
+  top:0;
 }
 
+.product-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:10px;
+}
 .vendor-div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 80px;
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 600;
@@ -14,60 +23,95 @@
   line-height: 20px;
   letter-spacing: 0.25px;
   color: #1F1F21;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
-.btn{
-    border-radius: 25px;
-    text-align: center;
-    border: none;
-    color:white;
-    width:166px;
-    font-size: 14px;
-    cursor: pointer;
-    padding: 12px;
-    background-color: #13322B;
-  }
-  .text-btn{
-    border-radius: 25px;
-    text-align: center;
-    border: none;
-    color:black;
-    width:166px;
-    font-size: 14px;
-    cursor: pointer;
-    padding: 12px;
-  }
-  .whole-item{
-    width:306px;
-    height:178px;
-    border:1px solid gray;
-    background: #F7F8FB;
-    border-radius: 16px;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .item-no{
-    text-align: center;
-    width:50%;
-    display: flex;
+
+.btn {
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+  color: white;
+  width: 166px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 12px;
+  background-color: #13322B;
+}
+
+.home-heading {
+  padding-bottom: 10px;
+}
+
+.button-div {
+  display: flex;
+  gap: 16px;
+}
+
+.text-btn {
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+  color: black;
+  width: 166px;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.whole-item {
+  width: 306px;
+  height: 178px;
+  border: 1px solid gray;
+  background: #F7F8FB;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.item-no {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Notification-img {
+  height: 80px;
+  width: 80px;
+}
+
+span {
+  color: gray;
+}
+
+.all-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10px;
+  padding: 25px 23px;
+}
+
+.vendor-details {
+  padding-top:30px;
+
+}
+.filter-btn{
+  width:200px;
+}
+.sort-btn{
+  width:150px;
+}
+
+@media only screen and (max-width: 900px) {
+  .vendor-div {
     flex-direction: column;
-    justify-content: space-around;
+    gap: 20px;
   }
-  .Notification-img{
-    height:80px;
-    width:80px;
-  }
-  span{
-    color:gray;
-  }
-  .all-category{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
-    padding:25px 23px;
-  }
-  
+}

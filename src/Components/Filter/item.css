@@ -1,8 +1,64 @@
-.service-product-btn{
-  display:flex;
-  gap:10px;
+.service-product-btn {
+  display: flex;
+  gap: 10px;
 }
-.text-btn{
-  color:gray;
-  border:1px solid #EAECF3;
+.filter-container{
+  width:420px;
+  padding:25px;
+  position: absolute;
+  right:350px;
+  background-color: #FFFFFF;;
+  border-radius: 10px;
+}
+
+.text-btn {
+  color: gray;
+  border: 1px solid #EAECF3;
+  background-color: #D8D8D9;
+}
+
+.item-div {
+  display: flex;
+  gap: 20px;
+}
+
+.item-buttom {
+  width: 80px;
+  height: 30px;
+  font-family: 'Nunito Sans';
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #D8D8D9;
+}
+
+.price-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.buy-btn {
+  height: 30px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  background-color: #D8D8D9;
+}
+.apply{
+  padding-top:30px;
+}
+
+.apply-btn {
+  width:372px;
+  height:43px;
+  border-radius: 27px;
+  border:none;
+  background: #EAECF3;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+
 }

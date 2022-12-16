@@ -1,0 +1,41 @@
+.text-common {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.xmall {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.small {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.medium {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.large {
+  font-size: 24px;
+  line-height: 30px;
+  color: gray;
+}
+
+.xlarge {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.size {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.15px;
+  color: #59595B;
+  /* color: red; */
+}

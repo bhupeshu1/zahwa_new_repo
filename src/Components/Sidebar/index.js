@@ -1,46 +1,38 @@
 import React from "react";
 import './bar.css';
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import image from '../Image/image';
-import image1 from '../Image/mystore.png';
-import image2 from '../Image/myorder.png';
-import image3 from '../Image/proposals.png';
-import image4 from '../Image/promotion.png';
-import image5 from '../Image/Rectangle.png';
-import image6 from '../Image/design.png';
 
+const SIDE_BAR_LIST = [
+  { name: "Home", path: "/", image: image.blurHome,imageblack:image.Home},
+  { name: "MyStore", path: "/MyStore", image: image.blurMystore, imageblack:image.mystore},
+  { name: "MyOrder", path: "/MyOrder", image: image.blurMyorder , imageblack:image.myorder },
+  { name: "Proposal", path: "/Proposal", image: image.blurProposal,imageblack:image.proposal },
+  { name: "Promotion", path: "/Promotion", image: image.blurPromotion,imageblack:image.promotion}
+]
 const Sidebar = () => {
-  // const [activeButton ,setActiveButton]=usestate("Home");
-  // const Button =[
-  //   {'Home'},
-  //   {'MyStore'},
-  //   {'MyOrder'},
-  //   {'Proposal'},
-  //   {'Promotion'}
-
-  // ]
+  const location = useLocation();
   return (
     <div className="sidebar">
       <ul>
-        <img src={image.Rectangle} />
-        <img src={image.design} id="design-img" />
-
-        <li>
-          <NavLink to={"/"}><img src={image.Home} />&nbsp;&nbsp;&nbsp;Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/MyStore"><img src={image.mystore} />&nbsp;&nbsp;&nbsp;MyStore</NavLink>
-        </li>
-        <li>
-          <NavLink to="/MyOrders"><img src={image.myorder} />&nbsp;&nbsp;&nbsp;MyOrder</NavLink>
-        </li>
-        <li>
-          <NavLink to="/Proposal"><img src={image.proposal} />&nbsp;&nbsp;&nbsp;Proposal</NavLink>
-        </li>
-        <li>
-          <NavLink to="/Promotion"><img src={image.promotion} />&nbsp;&nbsp;&nbsp;Promotion</NavLink>
-        </li>
+        <img src={image.Rectangle} alt="alt" />
+        <img src={image.design} id="design-img" alt="d" />
+        {
+          SIDE_BAR_LIST.map(item => {
+            return (
+              <li className={location.pathname === item.path ? 'active-link' : 'not-active'} key={item.path}>
+                <NavLink to={item.path}>
+                  <div className="nav-wrap">
+                    {location.pathname === item.path ? <img src={item.imageblack} alt="whiteimg" /> : <img src={item.image} alt="images" />}
+                    <div>{item.name}</div>
+                  </div>
+                </NavLink>
+              </li>
+            )
+          })
+        }
       </ul>
+
     </div>
   )
 

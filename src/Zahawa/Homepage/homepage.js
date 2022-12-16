@@ -6,25 +6,28 @@ import Selectbox from "../../Components/SelectBox/index"
 import Notification from '../../Components/Notification/index'
 import Hamburger from './../image/Hamburger.png'
 import HamburgerMenu from '../../Components/HamburgerMenu/hamburgermenu'
-import Sidebar from '../../Components/Sidebar'
-const HomePage = () => {
-  const [hamburger, setHamburger] = useState(false)
+import Button from '../../Components/Button'
+import Text from '../../Components/Text'
+import Home from '../../Data/Home.json'
 
+// import Sidebar from '../../Components/Sidebar'
+const HomePage = () => {
+  const [hamburger, setHamburger] = useState(false);
   const [notification, setNotification] = useState(false);
+  const [tableLabel, setTabLabel] = useState("OrderPlaced");
+  // const [tableLabel, setTabLabel] = useState("confirm");
+
   return (
     <div className="homepage">
       <div className="home-heading">
-        <div className='hamburger-Menu' >
-          {/* <Sidebar/> */}
-
-          <img onClick={() => setHamburger(true)} src={Hamburger} alt="" height="40px" width="40px" />
-          <HamburgerMenu hamburger={hamburger} />
+        <div className='hamburger-Menu'>
+          <img onClick={() => setHamburger(true)} src={Hamburger} alt="S" height="40px" width="40px" />
+          <HamburgerMenu hamburger={hamburger} onClose={() => setHamburger(false)} />
         </div>
 
         <h1>Home</h1>
-        <img onClick={() => setNotification(true)} src={image3} alt={"s"} class="bell-icon" />
+        <img onClick={() => setNotification(true)} src={image3} alt={"s"} className="bell-icon" />
         <Notification notification={notification} onClose={() => setNotification(false)} />
-        {/* <i class="bi bi-bell-fill"></i> */}
 
       </div>
       {/*top Home and icon close*/}
@@ -34,56 +37,79 @@ const HomePage = () => {
           <div className="circle-content">
             <h2>287</h2>
             <p>Total order</p>
-            <Selectbox />
-
-
+            <Selectbox classsName={'Select-Box'} EventName1={'Today'} EventName2={'this week'} EventName3={'This month'} EventName4={'This year'} />
           </div>
         </div>
         <div className="active-box">
           <p>Currently active</p>
           <h3>42</h3>
-          <div class="dot-icon"></div>
+          <div className='dot-icon'></div>
         </div>
         <div className="active-box">
           <p>Currently active</p>
           <h3>42</h3>
-          <div class="dot-icon-2"></div>
+          <div className="dot-icon-2"></div>
         </div>
         <div className="active-box">
           <p>Currently active</p>
           <h3>42</h3>
-          <div class="dot-icon-3"></div>
+          <div className="dot-icon-3"></div>
         </div>
       </div>
       <div className="order-box-container">
         <div className="price-list">
 
           <div class="order-placed">
-            <span class="order-details">Currently active orders</span>
-            <span class="order-details">See all orders</span>
+            <span className="order-details">Currently active orders</span>
+            <Text className='order-details' text={'See all orders'} />
           </div>
-          <div class="btn-serise">
-            <button class="btn">Order placed</button>
-            <button class="btn-text">Confirmed</button>
-            <button class="btn-text">On process</button>
-            <button class="btn-text">Completed</button>
+          <div className="btn-serise">
+            <Button className="btn" buttonText="Order placed" onClick={() => {
+              setTabLabel("OrderPlaced")
+            }} />
+            <Button className="btn" buttonText="Confirmed" buttonClass="order-btn" onClick={() => {
+              setTabLabel("Confirm")
+            }} />
+            <Button buttonText="On process" buttonClass="order-btn" />
+            <Button buttonText="Completed" buttonClass="order-btn" />
           </div>
 
-          {[1, 2, 3, 4].map((item, id) => (
+          <div>
+            {tableLabel == "OrderPlaced" && <>
+              {Home['order placed'].map((item, id) => (
 
-            <div className="order-list" key={`first+${id}`}>
-              <div className="item">
-                <h3>Elise Beverley</h3>
-                <p>Wedding & anniversary</p>
-              </div>
-              <div>
-                <div className="item">
-                  <h3>$240.00.4 items</h3>
-                  <p>Ordered on Jan 2nd, 2021</p>
+                <div className="order-list" key={`first+${id}`}>
+                  <div className="item">
+                    <h3>{item.name}</h3>
+                    <p>{item.title}</p>
+                  </div>
+                  <div className="item">
+                    <h3>{item.price}</h3>
+                    <p>{item.orderdate}</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
+
+              ))}
+            </>}
+            {tableLabel == "Confirm" && <>
+
+            {Home['confirm'].map((item, id) => (
+
+<div className="order-list" key={`first+${id}`}>
+  <div className="item">
+    <h3>{item.name}</h3>
+    <p>{item.title}</p>
+  </div>
+  <div className="item">
+    <h3>{item.price}</h3>
+    <p>{item.orderdate}</p>
+  </div>
+</div>
+             
+            </>}
+
+          </div>
+
         </div>
         <div className="card-menu">
           <div className="oval-img">
@@ -92,15 +118,15 @@ const HomePage = () => {
               <p>Total orders</p></div>
           </div>
           <div className="sale-item">
-            <div class="card-item">
+            <div className="card-item">
               <p>Item for sale</p>
-              <h1 class="card-heading">168</h1>
+              <h1 className="card-heading">168</h1>
             </div>
             <div><p>Item sold</p>
-              <h1 class="card-heading">20</h1>
+              <h1 className="card-heading">20</h1>
             </div>
           </div>
-          <p class="card-text">see inventory</p>
+          <p className="card-text">see inventory</p>
 
         </div>
       </div>

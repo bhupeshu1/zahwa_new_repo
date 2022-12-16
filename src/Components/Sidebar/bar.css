@@ -3,31 +3,53 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 Nav:active {
   color: blue;
 }
 
+.active-link a {
+  /* background-color:#00b339; */
+  color: black;
+  margin-left: 20px;
+}
+
+/* .active-link a{
+  color:black;
+} */
 li a {
   display: block;
-  color: #000;
+  color: #D8D8D9;
   padding: 8px 23px;
   text-decoration: none;
+  /* margin-left: 20px; */
+}
+
+.nav-wrap {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-img {
+  margin-right: 10px;
 }
 
 li a:hover {
-  background-color: #555;
-  color: white;
+  /* background-color: #555; */
+  /* color: white; */
 }
 
 #design-img {
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 65px;
+  top: 33px;
 }
+
 
 .sidebar {
   width: 20%;
   border-right: 1px solid #EAECF3;
+  min-height: 100vh;
 }
 
 @media only screen and (max-width: 900px) {
