@@ -64,14 +64,18 @@ const HomePage = () => {
             <Text className='order-details' text={'See all orders'} />
           </div>
           <div className="btn-serise">
-            <Button className="btn" buttonText="Order placed" onClick={() => {
+            <Button className="btn" buttonText="Order placed" buttonClass="order-btn" onClick={() => {
               setTabLabel("OrderPlaced")
             }} />
             <Button className="btn" buttonText="Confirmed" buttonClass="order-btn" onClick={() => {
-              setTabLabel("Confirm")
+              setTabLabel("Confirmed")
             }} />
-            <Button buttonText="On process" buttonClass="order-btn" />
-            <Button buttonText="Completed" buttonClass="order-btn" />
+            <Button buttonText="On process" onClick={() => {
+              setTabLabel("On process")
+            }} buttonClass="order-btn" />
+            <Button buttonText="Completed" buttonClass="order-btn" onClick={() => {
+              setTabLabel("Completed")
+            }} />
           </div>
 
           <div>
@@ -91,24 +95,58 @@ const HomePage = () => {
 
               ))}
             </>}
-            {tableLabel == "Confirm" && <>
+            {tableLabel == "Confirmed" &&
+              <>
+                {Home['Confirmed'].map((item, id) => (
 
-            {Home['confirm'].map((item, id) => (
+                  <div className="order-list" key={`first+${id}`}>
+                    <div className="item">
+                      <h3>{item.name}</h3>
+                      <p>{item.title}</p>
+                    </div>
+                    <div className="item">
+                      <h3>{item.price}</h3>
+                      <p>{item.orderdate}</p>
+                    </div>
+                  </div>
 
-<div className="order-list" key={`first+${id}`}>
-  <div className="item">
-    <h3>{item.name}</h3>
-    <p>{item.title}</p>
-  </div>
-  <div className="item">
-    <h3>{item.price}</h3>
-    <p>{item.orderdate}</p>
-  </div>
-</div>
-             
-            </>}
+                ))}
+              </>}
+            {tableLabel == "On process" &&
+              <>
+                {Home['On process'].map((item, id) => (
 
+                  <div className="order-list" key={`first+${id}`}>
+                    <div className="item">
+                      <h3>{item.name}</h3>
+                      <p>{item.title}</p>
+                    </div>
+                    <div className="item">
+                      <h3>{item.price}</h3>
+                      <p>{item.orderdate}</p>
+                    </div>
+                  </div>
+
+                ))}
+              </>}
           </div>
+          {tableLabel == "Completed" &&
+            <>
+              {Home['Completed'].map((item, id) => (
+
+                <div className="order-list" key={`first+${id}`}>
+                  <div className="item">
+                    <h3>{item.name}</h3>
+                    <p>{item.title}</p>
+                  </div>
+                  <div className="item">
+                    <h3>{item.price}</h3>
+                    <p>{item.orderdate}</p>
+                  </div>
+                </div>
+
+              ))}
+            </>}
 
         </div>
         <div className="card-menu">

@@ -25,15 +25,15 @@
       "orderdate": "Ordered on Jan 2nd, 2021"
     }
   ],
-  "confirmed": [
+  "Confirmed": [
     {
-      "name": "Elise Beverley",
+      "name": "hello",
       "title": "Wedding & anniversary",
       "price": "$240.00  4 items",
       "orderdate": "Ordered on Jan 2nd, 2021"
     },
     {
-      "name": "Elise Beverley",
+      "name": "Elidgfgfgdfse Beverley",
       "title": "Wedding & anniversary",
       "price": "$240.00  4 items",
       "orderdate": "Ordered on Jan 2nd, 2021"
@@ -53,7 +53,7 @@
   ],
   "On process": [
     {
-      "name": "Elise Beverley",
+      "name": "Bhawesh Panday",
       "title": "Wedding & anniversary",
       "price": "$240.00  4 items",
       "orderdate": "Ordered on Jan 2nd, 2021"
@@ -79,13 +79,13 @@
   ],
   "Completed": [
     {
-      "name": "Elise Beverley",
+      "name": "imran khan",
       "title": "Wedding & anniversary",
-      "price": "$240.00  4 items",
+      "price": "100$",
       "orderdate": "Ordered on Jan 2nd, 2021"
     },
     {
-      "name": "Elise Beverley",
+      "name": "Sachine",
       "title": "Wedding & anniversary",
       "price": "$240.00  4 items",
       "orderdate": "Ordered on Jan 2nd, 2021"
