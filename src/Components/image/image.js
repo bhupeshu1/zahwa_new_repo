@@ -29,6 +29,7 @@ import blurMyorder from '../Image/blurmyorder.png'
 import blurProposal from '../Image/blurproposal.png'
 import blurPromotion from '../Image/blurpromotion.png'
 import digit8 from '../Image/Group8.png'
+import plusicon from '../Image/addbtn.png'
 const image = {
   CoupleImg,
   design,
@@ -60,6 +61,7 @@ const image = {
   blurProposal,
   blurPromotion,
   digit8,
+  plusicon,
 
 }
 export default image; 

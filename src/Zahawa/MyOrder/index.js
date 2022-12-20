@@ -7,14 +7,14 @@ import Filter from '../../Components/Filter/index'
 import Sort from '../../Components/Sort/index'
 
 const Index = () => {
-  const [filter , setFilter] = useState(false);
+  const [filter, setFilter] = useState(false);
   const [sort, setSort] = useState(false)
 
   return (
     <div className='order-container'>
       <div className='header-div'>
         <div>
-       <h1>Home</h1></div>
+          <h1>Home</h1></div>
         <div><img src={image.Notification} id="bell-icon" alt="bell" /></div>
       </div>
       <div className='second-header'>
@@ -25,12 +25,12 @@ const Index = () => {
         <div className='product-div'>
           <input type="search" class="search-input" placeholder='search'></input>
           <div><button onClick={() => setFilter(true)} className="set-btn">Filter</button>
-        <Filter filter={filter} onclose={() => setFilter(false)} />
-        </div>
-        <div><button onClick={() => setSort(true)} className="sort-btn">sort</button>
-        <Sort sort={sort} onclose={() => setSort(false)} />
-        
-        </div>
+            <Filter filter={filter} onclose={() => setFilter(false)} />
+          </div>
+          <div><button onClick={() => setSort(true)} className="sort-btn">sort</button>
+            <Sort sort={sort} onclose={() => setSort(false)} />
+
+          </div>
 
         </div>
       </div>
@@ -64,7 +64,7 @@ const Index = () => {
                 <Text text={'$ 120.50'} />
               </div>
               <div className='date-time'>
-                <Text text={'Payment'}/>
+                <Text text={'Payment'} />
                 <Text text={'Credit card'} />
               </div>
             </div>
@@ -81,4 +81,3 @@ const Index = () => {
 }
 
 export default Index
-
