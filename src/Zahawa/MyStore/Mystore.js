@@ -31,7 +31,7 @@ const Myorder = () => {
 
     <div className="my-store-container">
       <div className="home-heading">
-        <h1>Home</h1>
+        <h1>MyStore</h1>
         <img onClick={() => setInformation(true)} src={notification} alt={"hello"} className="Notification-img" />
         <Information information={information} onClose={() => setInformation(false)} />
       </div>

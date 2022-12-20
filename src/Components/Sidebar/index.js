@@ -14,9 +14,9 @@ const Sidebar = () => {
   const location = useLocation();
   return (
     <div className="sidebar">
-      <ul>
-        <img src={image.Rectangle} alt="alt" />
+       <img src={image.Rectangle} alt="alt" className="sidebar-logo" />
         <img src={image.design} id="design-img" alt="d" />
+      <ul>
         {
           SIDE_BAR_LIST.map(item => {
             return (

@@ -60,8 +60,8 @@ const HomePage = () => {
         <div className="price-list">
 
           <div class="order-placed">
-            <span className="order-details">Currently active orders</span>
-            <Text className='order-details' text={'See all orders'} />
+            <div className="order-details">Currently active orders</div>
+            <div className='order-details'>See all order</div>
           </div>
           <div className="btn-serise">
             <Button className="btn" buttonText="Order placed" buttonClass="order-btn" onClick={() => {

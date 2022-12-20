@@ -14,7 +14,7 @@ const Index = () => {
     <div className='order-container'>
       <div className='header-div'>
         <div>
-          <h1>Home</h1></div>
+          <h1>MyOrder</h1></div>
         <div><img src={image.Notification} id="bell-icon" alt="bell" /></div>
       </div>
       <div className='second-header'>

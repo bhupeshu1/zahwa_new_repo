@@ -1,7 +1,7 @@
 .container {
   width: 80%;
   min-height: 100vh;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   position: absolute;
   right: 0;
   top: 0;
@@ -48,6 +48,7 @@
   min-height:213px;
   border:1px solid #EAECF3;
   border-radius:20px;
+  padding: 20px;
 }
 .promotion-mid-container{
   padding: 20px;
