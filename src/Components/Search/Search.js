@@ -7,7 +7,13 @@ const Search = () => {
   return (
     <>
     <div className='searchbars'>
-    <input type="text" placeholder='search' className='input-decoration' onChange={inputEvent} value={img}></input>
+    <input type="text" placeholder='search' className='input-decoration' onChange={
+      ()=>{}
+    } 
+    // value={img}
+    >
+
+    </input>
 </div>
       
     </>

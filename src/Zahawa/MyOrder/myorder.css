@@ -33,7 +33,7 @@
    width:100%;
    min-height:90px;
    display: flex;
-   /* justify-content: space-between; */
+   justify-content: space-between;
    /* gap:20px; */
    /* justify-content: center;
    align-items: center; */
@@ -41,7 +41,7 @@
    .product-div{
      /* width:40%; */
      min-height:90px;
-     padding-left:40px;
+     /* padding-left:40px; */
      /* border:1px solid #EAECF3; */
      display: flex;
      gap:100px;
@@ -152,6 +152,10 @@
  border:none;
  width:93;
  height:44px;
+ }
+ .horizontal-line{
+  border-bottom: 5px solid red;
+
  }
  @media only screen and (max-width: 900px) {
    .second-header{
