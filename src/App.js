@@ -15,7 +15,6 @@ import HamburgerMenu from './Components/HamburgerMenu/hamburgermenu';
 function App() {
   return (
     <div className='app-container'>
-    {/* // <div className='route-container'> */}
 
       <BrowserRouter>
       <div className='route-container'>
@@ -27,15 +26,11 @@ function App() {
           <Route path='/MyStore' element={<Mystore />} />
           <Route path='/MyOrder' element={<MyOrder />} />
           <Route path='/Promotion' element={<Promotion />} />
-          <Route path='/Proposal' element={<Proposal />} />
+          <Route path='/Proposal' element={<Proposal />} /> 
 
         </Routes>
-        {/* <div className='route-container'> */}
         <HamburgerMenu />
-        {/* <Sidebar /> */}
-        {/* </BrowserRouter> */}
-        
-        </div>
+       </div>
 
 
 

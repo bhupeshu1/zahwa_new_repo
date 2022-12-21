@@ -1,0 +1,8 @@
+.input-decoration{
+  border:none;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding:5px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height:auto;
+}

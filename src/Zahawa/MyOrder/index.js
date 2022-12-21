@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './myorder.css'
+import Search from '../../Components/Search/Search'
 import image from '../../Components/Image/image'
 import Text from '../../Components/Text'
 import Button from '../../Components/Button'
@@ -23,7 +24,8 @@ const Index = () => {
           <Text text={'Previous orders'} />
         </div>
         <div className='product-div'>
-          <input type="search" class="search-input" placeholder='search'></input>
+          <Search/>
+          {/* <input type="search" class="search-input" placeholder='search'></input> */}
           <div><button onClick={() => setFilter(true)} className="set-btn">Filter</button>
             <Filter filter={filter} onclose={() => setFilter(false)} />
           </div>

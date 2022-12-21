@@ -18,6 +18,8 @@ const Index = () => {
         <button type="btn" className='sort-btn'>Sort</button>
         <img src={image.plusicon} alt="+" />
       </div>
+      <div className='map-promotion'>
+      {[1, 2, 3, 4].map(() => (
       <div className='promotion-mid-container'>
       <div className='promotion-div'>
         <h2>Promotion name lorem ipsum dolor sit amet</h2>
@@ -40,7 +42,12 @@ const Index = () => {
       </div>
       </div>
 
+      
+
     </div>
+     ))}
+     </div>
+  
     </div>
 
 
