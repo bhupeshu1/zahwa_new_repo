@@ -32,11 +32,11 @@
   color: #13322B;
 }
 
-.home-heading {
+/* .home-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .Active-box-circle {
   padding: 20px 0;
@@ -301,14 +301,7 @@ p {
   position: relative;
 }
 
-.hamburger-Menu {
-  display: none;
-}
-
-.bell-icon {
-  width: 70px;
-  height: 70px;
-}
+/* | */
 
 @media only screen and (max-width: 900px) {
   body {

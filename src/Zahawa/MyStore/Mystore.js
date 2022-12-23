@@ -2,20 +2,20 @@ import React, { useState } from 'react'
 import Filter from '../../Components/Filter'
 import ProductCard from '../../Components/Food';
 import image from '../image/foodimage.png';
-import notification from '../image/notification.png';
 import starimg from '../image/star.png';
 import marriage from '../image/couple-image.svg';
 import threedots from '../image/threedot.png'
 import Selectbox from '../../Components/SelectBox';
 import Sort from '../../Components/Sort';
-import Information from '../../Components/Information'
 import Customer from '../../Components/Customer'
+import Header from '../../Components/Header/index'
+import Information from '../../Components/Information/index'
 import './store.css';
 const Myorder = () => {
   const [filter, setFilter] = useState(false)
   const [sort, setSort] = useState(false)
-  const [information, setInformation] = useState(false)
   const [customer,setCustomer] = useState(false)
+  const [information,setInformation] =useState(false)
   const ProductList = [
     { name: "Item name lorem ipsum dolor", price: 30, currency: '$', image: image },
     { name: "Item name lorem ipsum dolor", price: 40, currency: '$', image: image },
@@ -23,17 +23,19 @@ const Myorder = () => {
     { name: "Item name lorem ipsum dolor", price: 45, currency: '$', image: image },
     { name: "Item name lorem ipsum dolor", price: 30, currency: '$', image: image },
     { name: "Item name lorem ipsum dolor", price: 40, currency: '$', image: image },
-    // { name: "Item name lorem ipsum dolor", price: 60, currency: '$', image: image }
+    
   ];
 
 
   return (
 
     <div className="my-store-container">
-      <div className="home-heading">
-        <h1>MyStore</h1>
+      <div>
+        <Header title="MyStore"/>
+        
+        {/* <h1>MyStore</h1>
         <img onClick={() => setInformation(true)} src={notification} alt={"hello"} className="Notification-img" />
-        <Information information={information} onClose={() => setInformation(false)} />
+        <Information information={information} onClose={() => setInformation(false)} /> */}
       </div>
       <div className="vendor-div">
         <div className="couple-image"><img src={marriage} alt={"hello"} />
@@ -42,7 +44,8 @@ const Myorder = () => {
           <h1>Vendor name lorem ipsum</h1>
           <p><img src={starimg} alt="asterisk" />4.2 | Bangelore | Food, drinks & caterings</p>
           <div className="button-div">
-             <button type="information-btn" className="btn">Informations</button>
+             <button type="information-btn" className="btn" onClick={() => setInformation(true)}>Informations</button>
+             <Information information={information} onCloseModal={() => setInformation(false)}/>
             <button type="customer rating" className="text-btn" onClick={() => setCustomer(true)}>Customer ratings</button>
             <Customer  customer={customer} onCloseModal={() => setCustomer(false)}/>
           </div>

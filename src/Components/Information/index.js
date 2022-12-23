@@ -2,13 +2,13 @@ import React from 'react'
 import './information.css'
 import image from '../Image/image'
 
-  const index = ({information, onClose }) => {
+  const index = ({information, onCloseModal }) => {
     if (!information) {
       return null;
     }
   return (
     <div className="information-container">
-      <h1><img onClick={onClose}src={image.rightaero} alt="a" />&nbsp;&nbsp;&nbsp;Store information</h1>
+      <h1><img onClick={onCloseModal}src={image.rightaero} alt="a" />&nbsp;&nbsp;&nbsp;Store information</h1>
       <p><lavel>Store name</lavel></p>
       <input type="text" className="input" placeholder='Lorem vendor name'></input>
       <p><lavel>Store category</lavel></p>

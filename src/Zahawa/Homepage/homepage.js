@@ -1,36 +1,19 @@
 import React, { useState } from 'react'
 import './Homepage.css'
 import image1 from "./../image/orangecircle.svg"
-import image3 from "./../image/notification.png"
 import Selectbox from "../../Components/SelectBox/index"
-import Notification from '../../Components/Notification/index'
-import Hamburger from './../image/Hamburger.png'
-import HamburgerMenu from '../../Components/HamburgerMenu/hamburgermenu'
 import Button from '../../Components/Button'
-import Text from '../../Components/Text'
 import Home from '../../Data/Home.json'
-
-// import Sidebar from '../../Components/Sidebar'
+import {AiFillCaretRight} from 'react-icons/ai';
+import Header from '../../Components/Header/index'
 const HomePage = () => {
-  const [hamburger, setHamburger] = useState(false);
-  const [notification, setNotification] = useState(false);
   const [tableLabel, setTabLabel] = useState("OrderPlaced");
-  // const [tableLabel, setTabLabel] = useState("confirm");
-
+  
   return (
     <div className="homepage">
-      <div className="home-heading">
-        <div className='hamburger-Menu'>
-          <img onClick={() => setHamburger(true)} src={Hamburger} alt="S" height="40px" width="40px" />
-          <HamburgerMenu hamburger={hamburger} onClose={() => setHamburger(false)} />
+      <div>
+        <Header title="Home"/>
         </div>
-
-        <h1>Home</h1>
-        <img onClick={() => setNotification(true)} src={image3} alt={"s"} className="bell-icon" />
-        <Notification notification={notification} onClose={() => setNotification(false)} />
-
-      </div>
-      {/*top Home and icon close*/}
       <div className="Active-box-circle">
         <div className='order-circle'>
           <img src={image1} className="circle" alt="sdsd" />
@@ -61,7 +44,7 @@ const HomePage = () => {
 
           <div class="order-placed">
             <div className="order-details">Currently active orders</div>
-            <div className='order-details'>See all order</div>
+            <div className='order-details'>See all order<AiFillCaretRight/></div>
           </div>
           <div className="btn-serise">
             <Button className="btn" buttonText="Order placed" buttonClass="order-btn" onClick={() => {

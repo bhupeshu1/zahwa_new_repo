@@ -2,7 +2,7 @@ import React from "react";
 import './Home.css';
 import image from './image/icon.png'
 import image1 from './image/Group 9.svg'
-import Button from "../../Components/Button";
+import Button from "../Button";
 const Home = () => {
   {console.log("home")}
   return (

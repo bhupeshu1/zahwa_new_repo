@@ -7,22 +7,21 @@
   top: 0;
 }
 
-.proposal-header {
+/* .proposal-header {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-}
+} */
 
-#headerimg {
+/* #headerimg {
   height: 70px;
   width: 70px;
   /* background-color: aqua; */
-}
+ */
 
 .category {
-  padding: 20px;
   display: flex;
-  justify-content: space-between;
+  gap:50px;
 
 }
 
@@ -122,16 +121,9 @@
     display: none;
   }
 
-  .proposal-header {
+  /* .proposal-header {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .category {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
+  } */
 }

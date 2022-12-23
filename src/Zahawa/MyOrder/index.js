@@ -6,6 +6,8 @@ import Button from '../../Components/Button'
 import Filter from '../../Components/Filter/index'
 import Sort from '../../Components/Sort/index'
 import MyOrder from '../.././Data/MyOrder.json'
+import Header from '../../Components/Header/index'
+import Information from '../../Components/Information/index'
 
 const Index = () => {
   const [filter, setFilter] = useState(false);
@@ -31,9 +33,9 @@ const Index = () => {
   return (
     <div className='order-container'>
       <div className='header-div'>
-        <div>
-          <h1>MyOrder</h1></div>
-        <div><img src={image.Notification} id="bell-icon" alt="bell" /></div>
+        <Header title="MyOrder"/>
+        {/* <div><h1>MyOrder</h1></div>
+        <div><img src={image.Notification} id="bell-icon" alt="bell" /></div> */}
       </div>
       <div className='second-header'>
         <div className='product-div'>

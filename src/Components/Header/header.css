@@ -1,0 +1,11 @@
+.header-top{
+  display:flex;
+  justify-content: space-between;
+}
+.Notification{
+  width: 70px;
+  height: 70px;
+}
+.hamburger-Menu {
+  display: none;
+}

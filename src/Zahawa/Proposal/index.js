@@ -1,13 +1,12 @@
 import React from 'react'
 import './proposal.css'
-import image from '../../Components/Image/image'
 import Button from '../../Components/Button'
+import Header from '../../Components/Header/index'
 const Index = () => {
   return (
     <div className='proposal-container'>
-      <div className='proposal-header'>
-        <h1>Proposal</h1>
-        <img src={image.Notification} id="headerimg" alt="r15" />
+      <div>
+       <Header title="Proposal"/>
       </div>
       <div className='category'>
         <input type="search" id="search" placeholder='Search'></input>

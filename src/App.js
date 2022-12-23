@@ -15,12 +15,13 @@ import HamburgerMenu from './Components/HamburgerMenu/hamburgermenu';
 function App() {
   return (
     <div className='app-container'>
-
-      <BrowserRouter>
+      {/* <Authentication/> */}
+    <BrowserRouter>
       <div className='route-container'>
       <Sidebar />
 
         <Routes>
+          
 
           <Route path='/' element={<HomePage />} />
           <Route path='/MyStore' element={<Mystore />} />
