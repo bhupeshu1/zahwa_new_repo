@@ -31,6 +31,7 @@ import blurPromotion from '../Image/blurpromotion.png'
 import digit8 from '../Image/Group8.png'
 import plusicon from '../Image/addbtn.png'
 import Trueimg from '../Image/check.png'
+import zahwaLogo from '../Image/zahwa.svg'
 const image = {
   CoupleImg,
   design,
@@ -64,6 +65,7 @@ const image = {
   digit8,
   plusicon,
   Trueimg,
+  zahwaLogo,
 
 }
 export default image; 

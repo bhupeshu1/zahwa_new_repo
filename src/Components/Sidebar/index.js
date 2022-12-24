@@ -2,6 +2,7 @@ import React from "react";
 import './bar.css';
 import { NavLink, useLocation } from "react-router-dom";
 import image from '../Image/image';
+import { useEffect } from "react";
 
 const SIDE_BAR_LIST = [
   { name: "Home", path: "/", image: image.blurHome,imageblack:image.Home},
@@ -10,8 +11,13 @@ const SIDE_BAR_LIST = [
   { name: "Proposal", path: "/Proposal", image: image.blurProposal,imageblack:image.proposal },
   { name: "Promotion", path: "/Promotion", image: image.blurPromotion,imageblack:image.promotion}
 ]
+
 const Sidebar = () => {
   const location = useLocation();
+  useEffect (() => {
+    window.scrollTo(0,0)
+  },[location]
+  )
   return (
     <div className="sidebar">
        <img src={image.Rectangle} alt="alt" className="sidebar-logo" />

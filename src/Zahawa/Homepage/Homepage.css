@@ -300,6 +300,10 @@ p {
 .order-circle {
   position: relative;
 }
+.navlink{
+  text-decoration: none;
+  color:black;
+}
 
 /* | */
 

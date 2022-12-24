@@ -6,6 +6,7 @@ import Button from '../../Components/Button'
 import Home from '../../Data/Home.json'
 import {AiFillCaretRight} from 'react-icons/ai';
 import Header from '../../Components/Header/index'
+import { NavLink } from 'react-router-dom'
 const HomePage = () => {
   const [tableLabel, setTabLabel] = useState("OrderPlaced");
   
@@ -44,7 +45,9 @@ const HomePage = () => {
 
           <div class="order-placed">
             <div className="order-details">Currently active orders</div>
+            <NavLink to='/MyOrder' className='navlink'>
             <div className='order-details'>See all order<AiFillCaretRight/></div>
+            </NavLink>
           </div>
           <div className="btn-serise">
             <Button className="btn" buttonText="Order placed" buttonClass="order-btn" onClick={() => {
