@@ -323,7 +323,11 @@ p {
   .order-placed {
    align-items: center;
     justify-content: center;
-    gap: 92px;
+    gap: 73px;
+    margin-left: 16px;
+    /* gap: 92px; */
+    /* margin-left: 253px; */
+
   }
 
   .total-order {
@@ -351,6 +355,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    /* margin-left: 212px; */
 
   }
   .order-list {

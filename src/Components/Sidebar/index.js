@@ -37,9 +37,19 @@ const Sidebar = () => {
             )
           })
         }
-      </ul>
+    </ul>
+    {/* <div className="profile-div">
+      <div className="profile-image">
+        <img src={image.Profileimg} alt="profile"/>
+      </div>
+      <div className="profile-section">
+        <h2>Carmen Beltrán</h2>
+        <p>Admin</p>
+      </div>
+    </div> */}
+      </div>
 
-    </div>
+    
   )
 
 }

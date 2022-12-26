@@ -52,6 +52,20 @@ li a:hover {
   bottom: 28px;
   right: 58px;
 }
+/* .profile-div{
+background-color: #D8D8D9;
+width:20%;
+height:150px;
+ border:1px solid black; 
+display: flex;
+flex-direction: row;
+}
+.profile-image{
+  width:40%;
+  height:150px;
+  /* border:1px solid gray; 
+
+} */
 
 
 @media only screen and (max-width: 900px) {

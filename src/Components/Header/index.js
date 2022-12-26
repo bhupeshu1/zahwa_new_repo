@@ -6,7 +6,7 @@ import Notification from '../../Components/Notification/index'
 
 const Index = (props) => {
   const [hamburger, setHamburger] = useState(false);
-  const [notification, setNotification] = useState(false);
+  const [isOpenNotifications, setShowNotification] = useState(false);
   return (
     <div>
       <div className='hamburger-Menu'>
@@ -15,8 +15,8 @@ const Index = (props) => {
         </div>
       <div className='header-top'>
         <div><h1>{props.title}</h1></div>
-        <div><img onClick={() => setNotification(true)} src={image.Notification} className="Notification" alt="bellicon"/></div>
-        <Notification notification={notification} onClose={() => setNotification(false)} />
+        <div><img onClick={() => setShowNotification(true)} src={image.Notification} className="Notification" alt="bellicon"/></div>
+        <Notification isOpen={isOpenNotifications} onClose={() => setShowNotification(false)} />
       </div>
       
     </div>
