@@ -162,10 +162,20 @@
      flex-wrap:wrap;
    }
    .product-div{
-     /* flex-wrap: wrap;
-     gap:20px; */
-     display: block;
-     align-items: center;
-     justify-content: center;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+     margin-left: 50px;
+     /* justify-content: space-between; */
+     /* flex-wrap: wrap; */
+     /* flex-direction: column;
+     align-items: center; */
+   }
+   .header-top{
+    gap: 155px;
+   }
+   .card-map{
+    gap:20px;
+    margin-left: 50px;
    }
  }

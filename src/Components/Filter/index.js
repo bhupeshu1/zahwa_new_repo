@@ -9,7 +9,7 @@ const index = ({filter,onclose}) => {
   }
   return (
     <div className="filter-container">
-      <h2><img onClick={onclose} src={image.symbol} alt="aero"/>Filter</h2>
+      <h2><img className='filter-aero' onClick={onclose} src={image.symbol} alt="aero"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Filter</h2>
       <h4>item type</h4>
       <div class="service-product-btn">
         <button className="text-btn">Service only</button>

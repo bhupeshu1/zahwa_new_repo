@@ -1,25 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './sort.css'
 import image from '../Image/image'
 
-const index = ({ sort, onclose }) => {
+
+const Index = ({ sort, onclose, sortValue, setSortValue }) => {
+
+  const [active, setActive] = useState(false)
+  // const [sortValue, setSortValue] = useState("");
+
+  const handler = (e) => {
+    setActive(!active);
+    setSortValue(e)
+  }
+
+  const Sort_Data = [
+    { Name: "Ascending" },
+    { Name: "Descending" },
+    { Name: "Higher price - lower price" },
+    { Name: "Lower price - higher price" },
+    { Name: "Higher period - lower rating" },
+    { Name: "Lower period - higher rating" },
+    { Name: "Lastly added" },
+    { Name: "Earlier added" }
+
+  ]
   if (!sort) {
     return null;
   }
   return (
     <div class="sort-div">
-      <h2>Sort<img onClick={onclose} src={image.symbol} alt="click" /></h2>
-      <p><img src={image.Trueimg} alt="select"/> Ascending</p>
-      <p> <img src={image.Trueimg} alt="select"/> Descending</p>
-      <p> <img src={image.Trueimg} alt="select"/> Higher price - lower price</p>
-      <p> <img src={image.Trueimg} alt="select"/> Lower price - higher price</p>
-      <p> <img src={image.Trueimg} alt="select"/> Higher period - lower rating</p>
-      <p> <img src={image.Trueimg} alt="select"/> Lower period - higher rating</p>
-      <p> <img src={image.Trueimg} alt="select"/> Lastly added</p>
-      <p> <img src={image.Trueimg} alt="select"/> Earlier added</p>
-      <button>Apply</button>
+      <h2>Sort&nbsp;&nbsp;&nbsp;<img onClick={onclose} src={image.symbol} alt="click" className='sort-close-aero' /></h2>
+
+      {
+        Sort_Data.map((item) => (
+          <p className='paragraph' onClick={(e) => handler(item.Name)}>
+            {sortValue === item.Name ? <img src={image.Trueimg} alt="select" /> : ""}
+            &nbsp;&nbsp;&nbsp; {item.Name}
+          </p>
+
+        ))
+      }
+      <button className='sort-apply-btn'>Apply</button>
     </div>
   )
 }
 
-export default index
+export default Index

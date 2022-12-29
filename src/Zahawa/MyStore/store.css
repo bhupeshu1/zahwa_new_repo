@@ -1,9 +1,9 @@
-.my-store-container{
-  width:80%;
-   margin-left:20px;
-  position:absolute;
-  right:0;
-  top:0;
+.my-store-container {
+  width: 80%;
+  margin-left: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .product-list-container {
@@ -13,8 +13,9 @@
   justify-content: space-between;
   /* gap:10px; */
 }
+
 .vendor-div {
-  padding-right:8px;
+  padding-right: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,15 +103,53 @@ span {
 }
 
 .vendor-details {
-  padding-top:30px;
+  padding-top: 30px;
 
 }
-.filter-btn{
-  width:200px;
+
+.filter-btn {
+  /* width:200px; */
+  Width: 93px;
+  Height: 44px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: #EAECF3;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: 0.2125px;
+
+  color: #1F1F21;
 }
-.sort-btn{
-  width:150px;
+
+.sort-btn {
+  /* width:150px; */
+  Width: 93px;
+  Height: 44px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: #EAECF3;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: 0.2125px;
+
+  color: #1F1F21;
 }
+
+.mystore-search {
+  border: none;
+  background-color: #F7F8FB;
+  width: 220px;
+  height: 45px;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
 
 @media only screen and (max-width: 900px) {
   .vendor-div {

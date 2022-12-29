@@ -44,7 +44,7 @@ const Index = () => {
         </div>
         <div className='product-div'>
           {/* <Search/> */}
-          <input onChange={inputHandler} type="search" class="search-input" placeholder='search'></input>
+          <input onChange={inputHandler} type="search" clasName="search-input" placeholder='search'></input>
           <div><button onClick={() => setFilter(true)} className="set-btn">Filter</button>
             <Filter filter={filter} onclose={() => setFilter(false)} />
           </div>

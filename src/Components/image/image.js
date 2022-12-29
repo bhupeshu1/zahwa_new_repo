@@ -33,6 +33,7 @@ import plusicon from '../Image/addbtn.png'
 import Trueimg from '../Image/check.png'
 import zahwaLogo from '../Image/zahwa.svg'
 import Profileimg from '../Image/profileimage.png'
+import Closeimg from '../Image/close.png'
 const image = {
   CoupleImg,
   design,
@@ -68,6 +69,8 @@ const image = {
   Trueimg,
   zahwaLogo,
   Profileimg,
+  Closeimg,
+
 
 }
 export default image; 
