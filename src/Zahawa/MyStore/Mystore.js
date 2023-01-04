@@ -12,36 +12,40 @@ import Food from '../../Components/Food/index'
 
 import './store.css';
 const Mystore = () => {
-  const [filter, setFilter] = useState(false)
-  const [sort, setSort] = useState(false)
-  const [customer, setCustomer] = useState(false)
-  const [sortValue, setSortValue] = useState("");
-  const [information, setInformation] = useState(false)
-  // const ProductList = [
-  //   { name: "Item name lorem ipsum dolor", price: 30, currency: '$', image: image },
-  //   { name: "Item name lorem ipsum dolor", price: 40, currency: '$', image: image },
-  //   { name: "Item name lorem ipsum dolor", price: 35, currency: '$', image: image },
-  //   { name: "Item name lorem ipsum dolor", price: 45, currency: '$', image: image },
-  //   { name: "Item name lorem ipsum dolor", price: 30, currency: '$', image: image },
-  //   { name: "Item name lorem ipsum dolor", price: 40, currency: '$', image: image },
-
-  // ];
-
-  return (
+        const [filter, setFilter] = useState(false)
+        const [sort, setSort] = useState(false)
+        const [customer, setCustomer] = useState(false)
+        const [sortValue, setSortValue] = useState("");
+        const [information, setInformation] = useState(false)
+      //   const [inputText, setInputText] = useState("");
+      //   let inputHandler = (e) => {
+      //     //convert input text to lower case
+      //     var lowerCase = e.target.value.toLowerCase();
+      //     setInputText(lowerCase);
+      //   };
+      
+      //   const filteredData = Mystore['Store_Data'].filter((el) => {
+      //     //if no input the return the original
+      //     if (inputText === '') {
+      //         return el;
+      //     }
+      //     //return the item which contains the user input
+      //     else {
+      //         return el.code.toLowerCase(Mystore['Store_Data']).includes(inputText)
+      //     }
+      // })
+        return (
 
     <div className="my-store-container">
       <div>
         <Header title="MyStore" />
 
-        {/* <h1>MyStore</h1>
-        <img onClick={() => setInformation(true)} src={notification} alt={"hello"} className="Notification-img" />
-        <Information information={information} onClose={() => setInformation(false)} /> */}
       </div>
       <div className="vendor-div">
         <div className="couple-image"><img src={marriage} alt={"hello"} />
         </div>
         <div className="vendor-details">
-          <h1>Vendor name lorem ipsum</h1>
+          <h1 className='heading-name'>Vendor name lorem ipsum</h1>
           <p><img src={starimg} alt="asterisk" />4.2 | Bangelore | Food, drinks & caterings</p>
           <div className="button-div">
             <button type="information-btn" className="btn" onClick={() => setInformation(true)}>Informations</button>
@@ -68,11 +72,11 @@ const Mystore = () => {
           </div>
         </div>
       </div>
-      <div class="all-category">
+      <div className="all-category">
         <Selectbox EventName1={'All category'} EventName2={'Category 1'} EventName3={'Category 2'} EventName4={'Category 3'} EventName5={'Category 4'} EventName6={'Category 5'} EventName7={'Category 6'} EventName8={'Category 7'} EventName9={'Category 8'} />
         <div><img src={threedots} alt="dots" /></div>
         <div>
-          <input type="search" placeholder='Search' className='mystore-search'></input>
+          <input type="search"  placeholder='Search' className='mystore-search'></input>
         </div>
         <div>
           <button onClick={() => setFilter(true)} className="filter-btn">Filter</button></div>
@@ -81,12 +85,12 @@ const Mystore = () => {
           <button onClick={() => setSort(true)} className="sort-btn">Sort</button>
         </div>
 
-        <Sort sortValue={sortValue}  setSortValue={setSortValue} sort={sort} onclose={() => setSort(false)} />
+        <Sort sortValue={sortValue} setSortValue={setSortValue} sort={sort} onclose={() => setSort(false)} />
 
 
       </div>
       <div className='product-list-container'>
-        <Food sortValue={sortValue}/>
+        <Food sortValue={sortValue} />
       </div>
     </div>
   )

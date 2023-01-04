@@ -43,7 +43,7 @@ const HomePage = () => {
       <div className="order-box-container">
         <div className="price-list">
 
-          <div class="order-placed">
+          <div className="order-placed">
             <div className="order-details">Currently active orders</div>
             <NavLink to='/MyOrder' className='navlink'>
             <div className='order-details'>See all order<AiFillCaretRight/></div>

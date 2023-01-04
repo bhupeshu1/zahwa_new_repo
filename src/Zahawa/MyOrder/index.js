@@ -34,8 +34,6 @@ const Index = () => {
     <div className='order-container'>
       <div className='header-div'>
         <Header title="MyOrder"/>
-        {/* <div><h1>MyOrder</h1></div>
-        <div><img src={image.Notification} id="bell-icon" alt="bell" /></div> */}
       </div>
       <div className='second-header'>
         <div className='product-div'>
@@ -43,7 +41,6 @@ const Index = () => {
           <h3 className='horizontal-line'>Previous orders</h3>
         </div>
         <div className='product-div'>
-          {/* <Search/> */}
           <input onChange={inputHandler} type="search" clasName="search-input" placeholder='search'></input>
           <div><button onClick={() => setFilter(true)} className="set-btn">Filter</button>
             <Filter filter={filter} onclose={() => setFilter(false)} />
@@ -71,7 +68,7 @@ const Index = () => {
             </div>
             <div className='event-date'>
               <div className='date-time'>
-                <Text text={item.order}/>
+                <Text text={item.order}/> 
                 <Text text={item.date} />
               </div>
               <div className='date-time'>

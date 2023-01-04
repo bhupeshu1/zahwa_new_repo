@@ -11,13 +11,13 @@ import Mystore from './Zahawa/MyStore/Mystore'
 import Promotion from './Zahawa/Promotion/index'
 import Proposal from './Zahawa/Proposal/index'
 import HamburgerMenu from './Components/HamburgerMenu/hamburgermenu';
-// import Authentication from './Zahawa/Authentication/LoginPage'
+import Authentication from './Zahawa/Authentication/LoginPage'
 
 function App() {
   return (
     <div className='app-container'>
-      {/* <Authentication/> */}
-    <BrowserRouter>
+      <Authentication/>
+    {/* <BrowserRouter>
       <div className='route-container'>
       <Sidebar />
 
@@ -36,7 +36,7 @@ function App() {
 
 
 
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 

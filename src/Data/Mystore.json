@@ -1,0 +1,34 @@
+{
+  "Store_Data": [
+    {
+      "name": "Item name lorem ipsum dolor",
+      "currency": "$",
+      "price": "20"
+    },
+    {
+      "name": "Name lorem ipsum dolor",
+      "currency": "$",
+      "price": "40"
+    },
+    {
+      "name": "Burger",
+      "currency": "$",
+      "price": "35"
+    },
+    {
+      "name": "Noodles",
+      "currency": "$",
+      "price": "45"
+    },
+    {
+      "name": "Shrimp",
+      "currency": "$",
+      "price": "50"
+    },
+    {
+      "name": "Stuffed dal in parathas",
+      "currency": "$",
+      "price": "70"
+    }
+  ]
+}

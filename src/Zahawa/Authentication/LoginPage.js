@@ -1,13 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './Page.css'
 import image from '../../Components/Image/image'
-// import { AiFillEyeInvisible } from 'react-icons/AiFillEyeInvisible';
-function myFunction(){
-  alert("are you sure")
+import axios from "axios";
+// import { AiFillEye } from 'react-icons/ai';
+import { FiEyeOff } from 'react-icons/fi';
+import { Toggle2Off } from 'react-bootstrap-icons';
+// const LoginPage = () => {
+//   const [password, setPassword] = useState('')
+//   const [email, setEmail] = useState('')
+//   console.log({ email, password })
+//   const handleEmail = (e) => {
+//     setEmail(e.target.value)
+
+//   }
+//   const handlePassword = (e) => {
+//     setPassword(e.target.value)
+
+//   }
+//   const handleApi = () => {
+//     console.log({ email, password })
+//     axios.post('http://zahawa.highpolar.in/auth/login/', {
+//       email: email,
+//       password: password
+//     })
+//       .than(result => {
+//         console.log(result.data);
+//         alert('success')
+//       })
+//       .catch(error => {
+//         console.log(error)
+//         alert('service error')
+//       })
+
+//   }
+// const [password, setPasswordValue]=useState("password");
+// const [passwordInput,setPasswordInput]=useState(" ");
+state ={
+  ispasswordshow : false
 }
+TogglePasswordVisivlity=()=>{
+  const {ispasswordshow}=this.state;
+  this.setState({ispasswordshow:!ispasswordshow})
 
-
-const LoginPage = () => {
+}
   return (
     <div className='Authentication-container'>
       <div className='login-ui'>
@@ -17,10 +52,11 @@ const LoginPage = () => {
             <p className='vendor'>please log in to use our vendor portal</p>
           </div>
           <div className='text'>Email</div>
-          <input type="email" className='input' placeholder='Email'></input>
+          <input type="email" className='input' placeholder='Email' value={email} onChange={handleEmail}></input>
           <div className='text'>Password</div>
-          <input type="password" className='input' placeholder='Password'></input>
-          <button id='white-btn' placeholder='Save changes' className='input' onClick="myFunction()">Save changes</button>
+          <input type={password} value={passwordInput} onChange={onPasswordChange} className='input' placeholder='Password'></input><span>< FiEyeOff id="eyeicon" /></span>
+          {/* <span><AiFillEye/></span> */}
+          <button id='white-btn' className='input' onClick={handleApi}>Log in</button>
           <p className='color-text'>Forgot your password?</p>
         </div>
       </div>
@@ -30,7 +66,7 @@ const LoginPage = () => {
 
     </div>
   )
-      
-    }
+
+}
 
 export default LoginPage
